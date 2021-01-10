@@ -15,6 +15,9 @@ namespace AGAWeatherApp.ViewModel
     {
         private string query;
 
+        /// <summary>
+        /// Query property "the query to be used by the user to search for a city".
+        /// </summary>
         public string Query
         {
             get { return query; }
@@ -24,9 +27,12 @@ namespace AGAWeatherApp.ViewModel
                 OnPropertyChanged("Query");
             }
         }
-
+        
         private City selectedCity;
 
+        /// <summary>
+        /// SelectedCity property "The selected city by the user".
+        /// </summary>
         public City SelectedCity
         {
             get { return selectedCity; }
@@ -43,6 +49,9 @@ namespace AGAWeatherApp.ViewModel
 
         private CurrentConditions currentConditions;
 
+        /// <summary>
+        /// CurrentConditions property "The weather conditions for the selected city".
+        /// </summary>
         public CurrentConditions CurrentConditions
         {
             get { return currentConditions; }
@@ -53,12 +62,24 @@ namespace AGAWeatherApp.ViewModel
             }
         }
 
+        /// <summary>
+        /// The Cities Observable Collection "List" property.
+        /// </summary>
         public ObservableCollection<City> Cities { get; set; }
 
+        /// <summary>
+        /// The Search Command property.
+        /// </summary>
         public SearchCommand SearchCommand { get; set; }
 
+        /// <summary>
+        /// The Exit Command property.
+        /// </summary>
         public ExitCommand ExitCommand { get; set; }
 
+        /// <summary>
+        /// The About Command property.
+        /// </summary>
         public AboutCommand AboutCommand { get; set; }
 
         /// <summary>
