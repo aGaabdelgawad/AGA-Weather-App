@@ -4,9 +4,9 @@ WPF Application to search for a city and get weather current conditions usin Acc
 ### Code Features
 * MVVM pattern.
 * No code behind.
-* Readability
+* Code Readability
 * Full documentation.
-* Explicit resources in Xaml.
+* Explicit styles in Xaml.
 
 ### Note for usage
 #### For security purposes, you have to create your own app in AccuWeather and use it API key:
