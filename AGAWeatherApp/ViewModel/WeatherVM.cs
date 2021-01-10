@@ -164,12 +164,18 @@ namespace AGAWeatherApp.ViewModel
             CurrentConditions = await AccuWeatherHelper.GetCurrentConditions(SelectedCity.Key);
         }
 
+        /// <summary>
+        /// The method for closing the weather window.
+        /// </summary>
         public void Exit()
         {
             if (MessageBox.Show("Are you sure you want to close?", "Warning", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
                 Application.Current.Shutdown();
         }
 
+        /// <summary>
+        /// The method for displaying info about the app.
+        /// </summary>
         public void About()
         {
             string aboutMessage = $"AGA Weather App 2021{Environment.NewLine}Version 1.0.0{Environment.NewLine}© 2021 Ahmed Gamal Abdel Gawad.{Environment.NewLine}All rights reserved.";
