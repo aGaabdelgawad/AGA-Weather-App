@@ -1,5 +1,5 @@
 # AGA-Weather-App
-WPF Application to search for a city and get the current weather conditions using AccuWeather API.
+WPF Application to search for a city and get its current weather conditions using AccuWeather API.
 
 ### Code Features
 * MVVM pattern.
